@@ -1,0 +1,22 @@
+﻿<Settings>
+  <!--
+    Marketing Automation Activity Services configuration
+-->
+  <Sitecore>
+    <XConnect>
+      <MarketingAutomation>
+        <Engine>
+          <Services>
+            <Sitecore.MarketingAutomation.AzureCustomActions.Services>
+              <!-- Implementation class: -->
+              <Type>MA.CustomAction.Services.AzureService, MA.CustomAction</Type>
+              <!-- Interface: -->
+              <As>MA.CustomAction.Services.IAzureService, MA.CustomAction</As>
+              <LifeTime>Transient</LifeTime>
+            </Sitecore.MarketingAutomation.AzureCustomActions.Services>
+          </Services>
+        </Engine>
+      </MarketingAutomation>
+    </XConnect>
+  </Sitecore>
+</Settings>

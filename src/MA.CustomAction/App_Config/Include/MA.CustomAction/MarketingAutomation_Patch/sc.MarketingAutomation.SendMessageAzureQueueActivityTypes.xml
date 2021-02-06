@@ -1,0 +1,21 @@
+﻿<Settings>
+  <!--
+    Marketing Automation activity type registrations.
+  -->
+  <Sitecore>
+    <XConnect>
+      <Services>
+        <Sitecore.MarketingAutomation.CustomActions.SendAzureQueueActivity>
+          <Type>Sitecore.Xdb.MarketingAutomation.Locator.ActivityTypeRegistration, Sitecore.Xdb.MarketingAutomation</Type>
+          <LifeTime>Singleton</LifeTime>
+          <Options>
+            <!-- ID must match the item Id of your custom Activity Type descriptor in /sitecore/system/Settings/Analytics/Marketing Automation/Activity Types/ -->
+            <Id>{C7C9F433-0D96-4791-BE74-4D942C16EC11}</Id>
+            <!-- The assembly reference to access your custom Activity Type code -->
+            <ImplementationType>MA.CustomAction.Model.SendMessageToAzureActivity, MA.CustomAction</ImplementationType>
+          </Options>
+        </Sitecore.MarketingAutomation.CustomActions.SendAzureQueueActivity>
+      </Services>
+    </XConnect>
+  </Sitecore>
+</Settings>
