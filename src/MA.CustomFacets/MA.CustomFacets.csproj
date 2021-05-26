@@ -75,12 +75,17 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Model\CustomerFacets.cs" />
-    <Compile Include="Model\CustomerModel.cs" />
+    <Compile Include="Model\CustomerCollectionModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
+    <None Include="App_Config\Include\XConnect.CustomFacets\Sitecore.XConnect.CustomFacetClient.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Config\Include\XConnect.CustomFacets\MarketingAutomation_Patch\sc.Demo.CustomModel.xml" />
+    <Content Include="App_Config\Include\XConnect.CustomFacets\MarketingAutomation_Patch\sc.MarketingAutomation.ContactLoader.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
