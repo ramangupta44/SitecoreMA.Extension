@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MA.CustomRules", "src\MA.Cu
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MA.CustomAction", "src\MA.CustomAction\MA.CustomAction.csproj", "{7E7B7BDC-56B4-47FC-B850-B770589190D0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MA.CustomFacets.Import", "src\MA.CustomFacets.Import\MA.CustomFacets.Import.csproj", "{BA5D8DC3-463F-4BA9-9F82-BAF2740B449E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{7E7B7BDC-56B4-47FC-B850-B770589190D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7E7B7BDC-56B4-47FC-B850-B770589190D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7E7B7BDC-56B4-47FC-B850-B770589190D0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BA5D8DC3-463F-4BA9-9F82-BAF2740B449E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA5D8DC3-463F-4BA9-9F82-BAF2740B449E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA5D8DC3-463F-4BA9-9F82-BAF2740B449E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA5D8DC3-463F-4BA9-9F82-BAF2740B449E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

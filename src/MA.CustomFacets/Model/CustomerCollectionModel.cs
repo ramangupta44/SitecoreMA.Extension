@@ -10,14 +10,14 @@ using System.Threading.Tasks;
 
 namespace MA.CustomFacets.Model
 {
-    public static class CustomerModel
+    public static class CustomerCollectionModel
     {
         public static XdbModel Model { get; } = CreateModel();
 
         private static XdbModel CreateModel()
         {
 
-            XdbModelBuilder builder = new XdbModelBuilder("CustomerModel", new XdbModelVersion(1, 0));
+            XdbModelBuilder builder = new XdbModelBuilder("CustomFacets.Xconnect.CustomerCollectionModel", new XdbModelVersion(1, 0));
             builder.ReferenceModel(Sitecore.XConnect.Collection.Model.CollectionModel.Model);
             builder.DefineFacet<Contact, CustomerFacets>(CustomerFacets.DefaultFacetKey);
             return builder.BuildModel();

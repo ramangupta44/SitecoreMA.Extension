@@ -15,8 +15,8 @@ namespace MA.CustomFacets.GenerateModel
     {
         static void Main(string[] args)
         {
-            var model = Sitecore.XConnect.Serialization.XdbModelWriter.Serialize(CustomerModel.Model);
-            File.WriteAllText(CustomerModel.Model.FullName + ".json", model);
+            var model = Sitecore.XConnect.Serialization.XdbModelWriter.Serialize(CustomerCollectionModel.Model);
+            File.WriteAllText(CustomerCollectionModel.Model.FullName + ".json", model);
             Console.WriteLine("Completed");
             Console.Read();
         }

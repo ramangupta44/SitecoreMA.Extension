@@ -1,0 +1,23 @@
+﻿<Settings>
+  <!--
+    Marketing Automation contact loader configuration
+-->
+  <Sitecore>
+    <XConnect>
+      <MarketingAutomation>
+        <Engine>
+          <Services>
+            <MarketingAutomation.Loading.ContactFacetsConfigurator>
+              <Options>
+                <IncludeFacetNames>
+                  <PhoneNumbers>PhoneNumbers</PhoneNumbers>
+                  <CustomerStatus>CustomerStatus</CustomerStatus>
+                </IncludeFacetNames>
+              </Options>
+            </MarketingAutomation.Loading.ContactFacetsConfigurator>
+          </Services>
+        </Engine>
+      </MarketingAutomation>
+    </XConnect>
+  </Sitecore>
+</Settings>
