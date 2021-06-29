@@ -16,16 +16,16 @@ namespace MA.CustomRules
     public class CheckCustomerStatus : ICondition, IMappableRuleEntity, IContactSearchQueryFactory
     {
         public StringOperationType Comparison { get; set; }
-        public string CustomerStatus { get; set; }
+        public string Customer_Status { get; set; }
         public Expression<Func<Contact, bool>> CreateContactSearchQuery(IContactSearchQueryContext context)
         {
-            return (Expression<Func<Contact, bool>>)(contact => this.Comparison.Evaluate(contact.GetFacet<CustomerFacets>(CustomerFacets.DefaultFacetKey).CustomerStatus, this.CustomerStatus));
+            return (Expression<Func<Contact, bool>>)(contact => this.Comparison.Evaluate(contact.GetFacet<CustomerStatus>(CustomerStatus.DefaultFacetKey).Status, this.Customer_Status));
         }
 
         public bool Evaluate(IRuleExecutionContext context)
         {
-            var customerStatus = context.Fact<Contact>((string)null).GetFacet<CustomerFacets>(CustomerFacets.DefaultFacetKey).CustomerStatus;
-            if (this.Comparison.Evaluate(customerStatus, this.CustomerStatus))
+            var customerStatus = context.Fact<Contact>((string)null).GetFacet<CustomerStatus>(CustomerStatus.DefaultFacetKey).Status;
+            if (this.Comparison.Evaluate(customerStatus, this.Customer_Status))
             {
                 return true;
             }
