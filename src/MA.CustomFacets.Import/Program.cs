@@ -157,7 +157,7 @@ namespace MA.CustomFacets.Import
                                 PersonalInformation.DefaultFacetKey,
                                 EmailAddressList.DefaultFacetKey,
                                 PhoneNumberList.DefaultFacetKey,
-                                CustomerFacets.DefaultFacetKey
+                                CustomerStatus.DefaultFacetKey
                             }));
 
                      if (existingContact != null)
@@ -187,9 +187,9 @@ namespace MA.CustomFacets.Import
                         PhoneNumberList newPhoneFacet = new PhoneNumberList(new PhoneNumber(countryCode, mobileNumber), "Mobile");
                         client.SetFacet<PhoneNumberList>(newContact, newPhoneFacet);
 
-                        CustomerFacets customerFacets = new CustomerFacets();
-                        customerFacets.CustomerStatus = customerStatus;
-                        client.SetFacet<CustomerFacets>(newContact, CustomerFacets.DefaultFacetKey, customerFacets);
+                        CustomerStatus customerFacets = new CustomerStatus();
+                        customerFacets.Status = customerStatus;
+                        client.SetFacet<CustomerStatus>(newContact, CustomerStatus.DefaultFacetKey, customerFacets);
 
                         client.AddContact(newContact);
 
@@ -234,7 +234,7 @@ namespace MA.CustomFacets.Import
                                 PersonalInformation.DefaultFacetKey,
                                 EmailAddressList.DefaultFacetKey,
                                 PhoneNumberList.DefaultFacetKey,
-                                CustomerFacets.DefaultFacetKey
+                                CustomerStatus.DefaultFacetKey
                             }));
                     }
                     else
@@ -244,27 +244,27 @@ namespace MA.CustomFacets.Import
                                 PersonalInformation.DefaultFacetKey,
                                 EmailAddressList.DefaultFacetKey,
                                 PhoneNumberList.DefaultFacetKey,
-                                CustomerFacets.DefaultFacetKey
+                                CustomerStatus.DefaultFacetKey
                             }));
                     }
 
                     if (contact != null)
                     {
-                        var customerFacet = contact.GetFacet<CustomerFacets>(CustomerFacets.DefaultFacetKey);
+                        var customerFacet = contact.GetFacet<CustomerStatus>(CustomerStatus.DefaultFacetKey);
 
                         if (customerFacet != null)
                         {
                             // Change facet properties
-                            customerFacet.CustomerStatus = customerStatus;
+                            customerFacet.Status = customerStatus;
                             //Update facet in contact
                             client.SetFacet(contact, customerFacet);
                         }
                         else
                         {
                             // Facet is new
-                            CustomerFacets newCustomerFacet = new CustomerFacets()
+                            CustomerStatus newCustomerFacet = new CustomerStatus()
                             {
-                                CustomerStatus = customerStatus
+                                Status = customerStatus
                             };
                             client.SetFacet(contact, newCustomerFacet);
                         }

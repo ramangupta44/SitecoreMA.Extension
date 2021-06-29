@@ -19,7 +19,7 @@ namespace MA.CustomFacets.Model
 
             XdbModelBuilder builder = new XdbModelBuilder("CustomFacets.Xconnect.CustomerCollectionModel", new XdbModelVersion(1, 0));
             builder.ReferenceModel(Sitecore.XConnect.Collection.Model.CollectionModel.Model);
-            builder.DefineFacet<Contact, CustomerFacets>(CustomerFacets.DefaultFacetKey);
+            builder.DefineFacet<Contact, CustomerStatus>(CustomerStatus.DefaultFacetKey);
             return builder.BuildModel();
         }
     }

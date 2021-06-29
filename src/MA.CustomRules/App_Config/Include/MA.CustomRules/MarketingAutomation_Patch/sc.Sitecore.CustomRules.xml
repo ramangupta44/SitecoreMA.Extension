@@ -1,0 +1,18 @@
+﻿<Settings>
+  <Sitecore>
+    <XConnect>
+      <Services>
+        <DescriptorLocator>
+          <Options>
+            <PredicateDescriptors>
+              <CheckCustomerStatus>
+                <id>{6578E005-9983-4D2E-B412-ED378C22A884}</id>
+                <type>MA.CustomRules.CheckCustomerStatus, MA.CustomRules</type>
+              </CheckCustomerStatus>
+            </PredicateDescriptors>
+          </Options>
+        </DescriptorLocator>
+      </Services>
+    </XConnect>
+  </Sitecore>
+</Settings>
