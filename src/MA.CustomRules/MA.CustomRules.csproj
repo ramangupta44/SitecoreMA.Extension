@@ -221,5 +221,8 @@
       <Name>MA.CustomFacets</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Config\Include\MA.CustomRules\MarketingAutomation_Patch\sc.Sitecore.CustomRules.xml" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

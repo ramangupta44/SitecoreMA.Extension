@@ -74,8 +74,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Model\CustomerFacets.cs" />
     <Compile Include="Model\CustomerCollectionModel.cs" />
+    <Compile Include="Model\CustomerStatus.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
