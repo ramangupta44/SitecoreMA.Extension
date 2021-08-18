@@ -1,0 +1,33 @@
+{
+  "name": "MACustomActivity.SendMessageAzureQueueActivity",
+  "version": "0.0.0",
+  "description": "MA Send Message Azure Queue",
+  "private": true,
+  "angular-cli": {},
+  "scripts": {
+    "predev": "npm install && rimraf ./codegen/",
+    "dev": "ngc -p ./src/tsconfig.aot.json && npm run build",
+    "prebuild": "rimraf ./dist/",
+    "build": "webpack --display-error-details"
+  },
+  "dependencies": {
+    "@angular/common": "^5.2.11",
+    "@angular/core": "^5.2.11",
+    "@angular/forms": "^5.2.11",
+    "@angular/http": "^5.2.11",
+    "@angular/platform-browser": "^5.2.11",
+    "@ngx-translate/core": "^9.0.2",
+    "@sitecore/ma-core": "file:../MA_Packages/ma-core",
+    "rxjs": "^5.5.11",
+    "zone.js": "^0.8.17"
+  },
+  "devDependencies": {
+    "@angular/compiler": "^5.2.11",
+    "@angular/compiler-cli": "^5.2.11",
+    "copyfiles": "^1.2.0",
+    "rimraf": "^2.6.3",
+    "ts-loader": "^2.3.7",
+    "typescript": "^2.9.2",
+    "webpack": "^3.12.0"
+  }
+}
