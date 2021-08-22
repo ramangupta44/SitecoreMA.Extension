@@ -7,6 +7,7 @@
 /vendor
 /app/logs
 /codegen
+/package-lock.json
 # dependencies
 /node_modules
 
