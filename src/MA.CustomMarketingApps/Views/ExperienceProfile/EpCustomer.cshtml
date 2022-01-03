@@ -1,0 +1,11 @@
+﻿@model MA.CustomMarketingApps.Model.ExperienceProfile.EpCustomerModel
+
+@if (Model != null && Model.customer_Status != null)
+{
+    <h3>Customer Status: </h3>
+    <div>@Model.customer_Status</div>
+}
+@if (Model == null || Model.customer_Status == null)
+{
+    <h3>This user does not have customer status.</h3>
+}

@@ -6,7 +6,7 @@
           <Options>
             <PredicateDescriptors>
               <CheckCustomerStatus>
-                <id>{6578E005-9983-4D2E-B412-ED378C22A884}</id>
+                <id>{961B9D01-8010-4257-9606-B4FCA7C57ED1}</id>
                 <type>MA.CustomRules.CheckCustomerStatus, MA.CustomRules</type>
               </CheckCustomerStatus>
             </PredicateDescriptors>
